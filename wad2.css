@@ -12,7 +12,7 @@ body {
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background-color: #c9580f;
+  background-color:#000000;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -23,12 +23,36 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
+.navbar a{
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  margin-right: 30px;
+  text-decoration: none;
+}
+.navbar a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  bottom: -5px;
+  border-radius: 5px;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: .5s ease;
+}
+.navbar a:hover:after{
+  transform: translateY(0);
+  opacity: 1;
+}
 .QRMainContainer {
   width: 35rem;
   padding: 1rem;
   margin: 0.6rem;
   transform: scale(.8);
-  background: #fff;
+  background: #fffeff;
   border-radius: 0.5rem;
 }
 
@@ -43,19 +67,19 @@ input[type="number"]::-webkit-outer-spin-button {
   border: none;
   padding: 0.5rem;
   cursor: pointer;
-  color: #c9580f;
+  color: #810c38;
   font-size: 1.1rem;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
   border-radius: 0.6rem;
-  border: 0.2rem solid #c9580f;
+  border: 0.2rem solid  #810c38;
   transition: all 0.3s ease-in-out;
 }
 
 .QRTypeBtn:hover,
 .QRTypeBtn.active {
   color: #fff;
-  background: #c9580f;
+  background:  #810c38;
 }
 
 .inputFields {
@@ -74,7 +98,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .inputTag:focus {
   outline: none;
-  border: 3px solid #c9580f;
+  border: 3px solid  #810c38;
 }
 
 .textareaTag {
@@ -89,7 +113,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .textareaTag:focus {
   outline: none;
-  border: 3px solid #c9580f;
+  border: 3px solid #810c38;
 }
 
 /* -------------------------- Free Text Section End -------------------------- */
@@ -190,13 +214,13 @@ input[type="number"]::-webkit-outer-spin-button {
   color: #fff;
   display: none;
   cursor: pointer;
-  overflow: hidden;
+  overflow: hidden;background-image: ;
   margin-top: 1rem;
   font-size: 1.2rem;
   position: relative;
   border-radius: 6px;
   padding: 0.8rem 2rem;
-  background: #c9580f;
+  background: #85062c;
   text-decoration: none;
   background-position: 5rem;
   text-transform: capitalize;
